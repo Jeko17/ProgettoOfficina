@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".AddClienteActivity">
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edit_name"
+        android:text="@string/label_name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_name"
+        app:layout_constraintStart_toStartOf="@+id/layout"
+        app:layout_constraintTop_toTopOf="@+id/layout" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/layout"
+        app:layout_constraintStart_toEndOf="@+id/name_label"
+        app:layout_constraintTop_toTopOf="@+id/layout" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edit_surname"
+        android:text="@string/label_surname"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_surname"
+        app:layout_constraintStart_toStartOf="@+id/layout"
+        app:layout_constraintTop_toTopOf="@+id/layout" />
+
+    <EditText
+        android:id="@+id/edit_surname"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/layout"
+        app:layout_constraintStart_toEndOf="@+id/name_label"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edit_email"
+        android:text="@string/label_email"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_email"
+        app:layout_constraintStart_toStartOf="@+id/layout"
+        app:layout_constraintTop_toTopOf="@+id/layout" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/layout"
+        app:layout_constraintStart_toEndOf="@+id/name_label"
+        app:layout_constraintTop_toBottomOf="@+id/edit_surname" />
+
+
+    <Button
+        android:id="@+id/add_customers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_add_label"
+        app:layout_constraintEnd_toEndOf="@+id/layout"
+        app:layout_constraintStart_toStartOf="@+id/layout"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

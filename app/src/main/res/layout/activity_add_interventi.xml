@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="5dp"
+    tools:context=".AddInterventiActivity">
+
+    <TextView
+        android:id="@+id/datastart_label"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edit_datastart"
+        android:text="Data Inizio"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_datastart"
+        app:layout_constraintStart_toStartOf="@+id/layout"
+        app:layout_constraintTop_toTopOf="@+id/layout" />
+
+    <EditText
+        android:id="@+id/edit_datastart"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/layout"
+        app:layout_constraintStart_toEndOf="@+id/datastart_label"
+        app:layout_constraintTop_toTopOf="@+id/layout" />
+
+    <TextView
+        android:id="@+id/datafinish_label"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edit_datafinish"
+        android:text="Data Fine"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_datafinish"
+        app:layout_constraintStart_toStartOf="@+id/layout"
+        app:layout_constraintTop_toTopOf="@+id/layout" />
+
+    <EditText
+        android:id="@+id/edit_datafinish"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/layout"
+        app:layout_constraintStart_toEndOf="@+id/datastart_label"
+        app:layout_constraintTop_toBottomOf="@+id/edit_datastart" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edit_hours"
+        android:text="Ore impiegate"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_hours"
+        app:layout_constraintStart_toStartOf="@+id/layout"
+        app:layout_constraintTop_toTopOf="@+id/layout" />
+
+    <EditText
+        android:id="@+id/edit_hours"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/layout"
+        app:layout_constraintStart_toEndOf="@+id/datafinish_label"
+        app:layout_constraintTop_toBottomOf="@+id/edit_datafinish" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edit_description"
+        android:text="Descrizione"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_description"
+        app:layout_constraintStart_toStartOf="@+id/layout"
+        app:layout_constraintTop_toTopOf="@+id/layout" />
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/layout"
+        app:layout_constraintStart_toEndOf="@+id/datafinish_label"
+        app:layout_constraintTop_toBottomOf="@+id/select_cars" />
+
+    <TextView
+        android:id="@+id/costumers_label"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edit_customers"
+        android:text="Targa"
+        app:layout_constraintBaseline_toBaselineOf="@+id/select_cars"
+        app:layout_constraintStart_toStartOf="@+id/layout"
+        app:layout_constraintTop_toTopOf="@+id/layout" />
+
+    <Spinner
+        android:id="@+id/select_cars"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/layout"
+        app:layout_constraintStart_toStartOf="@+id/edit_hours"
+        app:layout_constraintTop_toBottomOf="@+id/edit_hours"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_interventi"
+        app:layout_constraintEnd_toEndOf="@id/layout"
+        app:layout_constraintStart_toStartOf="@id/edit_description"
+        app:layout_constraintTop_toBottomOf="@id/edit_description"
+        android:text="AGGIUNGI INTERVENTO"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAutoActivity">
+
+    <TextView
+        android:id="@+id/targa_label"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edit_name"
+        android:text="Targa"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_targa"
+        app:layout_constraintStart_toStartOf="@+id/layout"
+        app:layout_constraintTop_toTopOf="@+id/layout" />
+
+    <EditText
+        android:id="@+id/edit_targa"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/layout"
+        app:layout_constraintStart_toEndOf="@+id/targa_label"
+        app:layout_constraintTop_toTopOf="@+id/layout" />
+
+    <TextView
+        android:id="@+id/telaio_label"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edit_telaio"
+        android:text="Telaio"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_telaio"
+        app:layout_constraintStart_toStartOf="@+id/layout"
+        app:layout_constraintTop_toTopOf="@+id/layout" />
+
+    <EditText
+        android:id="@+id/edit_telaio"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/layout"
+        app:layout_constraintStart_toEndOf="@+id/targa_label"
+        app:layout_constraintTop_toBottomOf="@+id/edit_targa" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edit_modello"
+        android:text="Modello"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_modello"
+        app:layout_constraintStart_toStartOf="@+id/layout"
+        app:layout_constraintTop_toTopOf="@+id/layout" />
+
+    <EditText
+        android:id="@+id/edit_modello"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/layout"
+        app:layout_constraintStart_toEndOf="@+id/telaio_label"
+        app:layout_constraintTop_toBottomOf="@+id/edit_telaio" />
+
+    <TextView
+        android:id="@+id/costumers_label"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edit_customers"
+        android:text="Cliente"
+        app:layout_constraintBaseline_toBaselineOf="@+id/select_customers"
+        app:layout_constraintStart_toStartOf="@+id/layout"
+        app:layout_constraintTop_toTopOf="@+id/layout" />
+
+    <Spinner
+        android:id="@+id/select_customers"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/layout"
+        app:layout_constraintStart_toStartOf="@+id/edit_modello"
+        app:layout_constraintTop_toBottomOf="@+id/edit_modello"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_add_car"
+        app:layout_constraintEnd_toEndOf="@id/layout"
+        app:layout_constraintStart_toStartOf="@+id/select_customers"
+        app:layout_constraintTop_toBottomOf="@id/select_customers"
+        android:text="AGGIUNGI AUTO"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

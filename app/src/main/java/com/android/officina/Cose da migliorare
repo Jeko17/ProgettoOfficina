@@ -1,0 +1,10 @@
+Visualizzazione del singolo cliente
+    - Email
+    - Visualizzazione delle auto assegnate
+        - Visualizzazione degli interventi
+
+Visualizzazione della singola auto
+    - Visualizzazione degli interventi
+
+Aggiunta Intervento
+    - Visualizzazione automatica del cliente alla selezione dalla targa

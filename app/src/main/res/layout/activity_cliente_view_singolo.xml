@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".ClienteViewSingoloActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/label_name"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/info_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:gravity="end"
+            android:text="@string/label_name"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/surname_label"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/label_surname"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/info_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:gravity="end"
+            android:text="@string/label_surname"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/label_email"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/info_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:gravity="end"
+            android:text="@string/label_email"/>
+
+    </LinearLayout>
+
+</LinearLayout>
